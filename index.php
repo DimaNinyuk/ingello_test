@@ -1,14 +1,10 @@
 <?php
  
+
+$fn = ($p = key($_GET)) ? 'content/' . $p . '/index.php' : 'content/index.php';
+$fn2 = ($p = key($_GET)) ? 'site/contact/' . $p . '/SiteController.php' : 'content/SiteController.php';
  
-$fn = (key($_GET)) ? '/' : 'content/index.php';
-$fn = (key($_GET)) ? '/user/auth/create-token' : 'content/user/AuthController.php';
-$fn = (key($_GET)) ? 'content/' : 'content/index.php';
-$fn = (key($_GET)) ? 'content/': 'content/index.php';
- 
-(file_exists($fn)) ? require $fn : require 'content/error404.php' ;
-(file_exists($fn)) ? require $fn : require 'content/error404.php' ;
-(file_exists($fn)) ? require $fn : require 'content/error404.php' ;
-(file_exists($fn)) ? require $fn : require 'content/error404.php' ;
+(file_exists($fn)) ? require $fn : require 'content/error404.php'; 
+
 
 ?>
