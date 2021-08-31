@@ -1,6 +1,6 @@
 <?php
 class SiteController{
-    function contact(){
+    public function contact(){
         echo "contact";
     }
 }
