@@ -24,7 +24,7 @@
  else if($p =="store/product"){
     $obj = new ProductController();
     $date = $_GET["date"];
-    $obj->create($date);
+    $obj->index($date);
  }
  else{
      require_once("content/error404.php");
