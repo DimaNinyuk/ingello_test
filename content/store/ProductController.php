@@ -3,13 +3,13 @@ class ProductController
 {
     function create()
     {
-        $id = $_POST["id"];
-        $name = $_POST["name"];
-        $price = $_POST["price"];
+        $id = $_GET["id"];
+        $name = $_GET["name"];
+        $price = $_GET["price"];
         echo $id . $name . $price;
     }
-    function index($date)
+    function index()
     {
-        echo $date;
+        echo "index";
     }
 }
